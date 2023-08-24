@@ -1,4 +1,4 @@
-//largest number among 3
+//Finding the largest number among the given three numbers
 
 
 #include <stdio.h>
@@ -10,7 +10,7 @@ int main()
     printf("Enter the numbers A, B and C: ");
     scanf("%d %d %d", &A, &B, &C);
   
-  // finding maximum number using compound expressions
+  // Find maximum number using compound expressions
     if (A >= B && A >= C)
         printf("%d is the largest number.", A);
   
