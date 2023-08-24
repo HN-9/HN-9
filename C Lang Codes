@@ -1,4 +1,4 @@
-//largest number 
+//largest number among 3
 
 
 #include <stdio.h>
@@ -10,7 +10,7 @@ int main()
     printf("Enter the numbers A, B and C: ");
     scanf("%d %d %d", &A, &B, &C);
   
-  // finding max using compound expressions
+  // finding maximum number using compound expressions
     if (A >= B && A >= C)
         printf("%d is the largest number.", A);
   
@@ -25,31 +25,31 @@ int main()
 }
 
 
-//root of equations
+//Finding Roots of a Qaudratic Equations
 #include <stdio.h>
 #include <math.h>
 
 int main() {
-    // Define the coefficients of the quadratic equation.
+    // Define the coefficients of the quadratic 
     float a, b, c;
     printf("Enter the coefficients of the quadratic equation: ");
     scanf(" %f %f %f ", &a, &b, &c);
 
-    // Calculate the discriminant.
+    // Calculate the Disriminant
     float discriminant = b * b - 4 * a * c;
 
-    // Check if the discriminant is positive.
+    // Check if discriminant is positive.
     if (discriminant > 0) {
-        // The equation has two real roots.
+        // Equation has two real roots.
         float root1 = (-b + sqrt(discriminant)) / (2 * a);
         float root2 = (-b - sqrt(discriminant)) / (2 * a);
         printf("The roots of the equation are %f and %f.", root1, root2);
     } else if (discriminant == 0) {
-        // The equation has one real root.
+        // Equation has one real root.
         float root = -b / (2 * a);
         printf("The root of the equation is %f.", root);
     } else {
-        // The equation has no real roots.
+        // Equation has no real roots.
         printf("The equation has no real roots.");
     }
 
